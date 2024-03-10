@@ -1,0 +1,10 @@
+ul li:hover {
+  background-color: #077a8f;
+  color: #fff;
+  transition: all 0.3s;
+}
+.active {
+  background-color: #077a8f !important;
+
+  transition: all 0.3s;
+}

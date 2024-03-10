@@ -1,0 +1,19 @@
+/***
+ * main styles and design 
+ * 
+ * main color #ffffff
+ * sec bg #f7f8f9
+ * sec color #077a8f
+ * main black #191919
+ * 
+ */
+
+.bg-main {
+  background-color: #f7f8f9 !important;
+}
+.bg-sec {
+  background-color: #077a8f;
+}
+.text-main {
+  color: #191919;
+}
