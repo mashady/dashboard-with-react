@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { IoIosStats } from "react-icons/io"
 import { HiOutlineUsers } from "react-icons/hi2"
 import { MdPostAdd } from "react-icons/md"
@@ -11,7 +11,7 @@ import "../styles/nav.css"
 export default function Nav() {
   return (
     <div className="bg-white text-main fixed hidden md:block w-[300px] h-full p-6">
-      <div className=" py-4 border-b-[1px]">
+      <div className=" py-4 border-b-[1px] mb-4">
         <span className="text-3xl ">Board</span>
       </div>
       <div>
