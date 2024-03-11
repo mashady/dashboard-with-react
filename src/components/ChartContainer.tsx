@@ -70,11 +70,49 @@ const data3 = [
 ]
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]
 
+const transactionData = [
+  {
+    name: "johndoe",
+    transNumber: "0015449",
+    date: "2021-03-01",
+    total: "$403.00",
+  },
+  {
+    name: "johnla",
+    transNumber: "0015019",
+    date: "2021-04-01",
+    total: "$43.50",
+  },
+  {
+    name: "johnba",
+    transNumber: "0012249",
+    date: "2021-05-01",
+    total: "$23.00",
+  },
+  {
+    name: "johnma",
+    transNumber: "0015449",
+    date: "2021-06-01",
+    total: "$48.00",
+  },
+  {
+    name: "johnla",
+    transNumber: "0015849",
+    date: "2021-07-01",
+    total: "$431.00",
+  },
+  {
+    name: "johnfa",
+    transNumber: "0015249",
+    date: "2021-08-01",
+    total: "$53.00",
+  },
+]
 export default function ChartConatiner() {
   return (
     <div className=" mt-14">
-      <div className=" flex justify-between gap-5">
-        <div className="flex justify-center items-center p-8 bg-white  w-full rounded-lg shadow-lg min-h-[300px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 min-h-[300px]">
+        <div className="flex lg:col-span-2 justify-center items-center p-8 bg-white  w-full rounded-lg shadow-lg min-h-[300px]">
           <ResponsiveContainer>
             <LineChart
               width={700}
@@ -88,6 +126,26 @@ export default function ChartConatiner() {
               <YAxis />
             </LineChart>
           </ResponsiveContainer>
+        </div>
+        <div className=" bg-white  rounded-lg shadow-lg h-[300px] overflow-x-hidden overflow-scroll">
+          <h2 className="border-b-4 p-4 text-lg">recent transaction</h2>
+          {transactionData.map((transaction, index) => (
+            <div
+              key={index}
+              className="flex justify-between items-center p-4 border-b-4"
+            >
+              <div>
+                <div className="text-[#077a8f] font-bold">
+                  {transaction.number}
+                </div>
+                <div>{transaction.name}</div>
+              </div>
+              <div>{transaction.date}</div>
+              <button className="bg-[#077a8f] text-white rounded p-2">
+                $43.00
+              </button>
+            </div>
+          ))}
         </div>
       </div>
     </div>

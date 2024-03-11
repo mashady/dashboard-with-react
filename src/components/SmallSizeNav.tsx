@@ -11,7 +11,7 @@ export default function SmallNav() {
   return (
     <div className="md:hidden p-8 flex bg-white justify-between items-center  mb-2">
       <Link to="/" className="text-3xl">
-        Board
+        Board<span className="text-3xl font-bold text-[#077a8f]">.</span>
       </Link>
       <div className="group  ">
         <CiMenuBurger className="text-2xl cursor-pointer " />

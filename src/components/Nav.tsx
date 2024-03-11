@@ -12,7 +12,9 @@ export default function Nav() {
   return (
     <div className="bg-white text-main fixed hidden md:block w-[300px] h-full p-6">
       <div className=" py-4 border-b-[1px] mb-4">
-        <span className="text-3xl ">Board</span>
+        <span className="text-3xl ">
+          Board<span className="text-3xl font-bold text-[#077a8f]">.</span>
+        </span>
       </div>
       <div>
         <ul className="py-2">
