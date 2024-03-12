@@ -6,7 +6,7 @@ export default function Register() {
   return (
     <>
       <div className="min-h-screen flex justify-center items-center dark:bg-[#1f1f1f] bg-[#f7f8f9]  text-main">
-        <div className="w-[500px] h-auto bg-white rounded shadow">
+        <div className="w-[500px] h-auto bg-white  dark:bg-[#121212] dark:text-white rounded shadow">
           <div className="p-6">
             <h1 className="text-3xl font-bold text-center">Register</h1>
             <div className="flex gap-5 justify-center mt-4">
