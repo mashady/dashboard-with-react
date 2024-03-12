@@ -37,6 +37,8 @@ export default function Nav() {
           <span className="text-3xl  font-bold text-[#077a8f]">.</span>
         </span>
         <div>
+          {/** dark mode toggle */}
+
           {dark ? (
             <CiDark
               color="white"
@@ -54,12 +56,7 @@ export default function Nav() {
           )}
         </div>
       </div>
-      {/** dark mode toggle */}
-      <div className="flex" onClick={handleClick}>
-        <div className="flex-initial w-64 font-bold underline decoration-sky-500 text-red-800">
-          Change Mode (Dark/Light)
-        </div>
-      </div>
+
       <div>
         <ul className="py-2">
           <NavLink className="" to="/">

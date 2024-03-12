@@ -14,7 +14,7 @@ const Paginate = ({ postsPerPage, totalPosts, paginate, currentPage }: any) => {
           <button
             onClick={() => paginate(currentPage - 1)}
             disabled={currentPage === 1}
-            className="h-10 px-5 mr-2 text-main transition-colors duration-150 bg-white  hover:bg-slate-300 focus:shadow-outline"
+            className="h-10 px-5  text-main transition-colors duration-150 bg-white  hover:bg-slate-300 focus:shadow-outline"
           >
             prev
           </button>
@@ -38,7 +38,7 @@ const Paginate = ({ postsPerPage, totalPosts, paginate, currentPage }: any) => {
           <button
             onClick={() => paginate(currentPage + 1)}
             disabled={currentPage === pageNumbers.length}
-            className="h-10 px-5 ml-2 text-main transition-colors duration-150 bg-white focus:shadow-outline hover:bg-slate-300 "
+            className="h-10 px-5  text-main transition-colors duration-150 bg-white focus:shadow-outline hover:bg-slate-300 "
           >
             next
           </button>

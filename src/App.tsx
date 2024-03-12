@@ -31,24 +31,15 @@ const App = () => {
           path: "/settings",
           element: <Settings />,
         },
-        {
-          path: "/register",
-          element: <Register />,
-        },
-        {
-          path: "/login",
-          element: <Login />,
-        },
       ],
     },
     {
-      element: <div>another route</div>,
-      children: [
-        {
-          path: "another",
-          element: <div>replace with component</div>,
-        },
-      ],
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
     },
   ])
   return <RouterProvider router={router} />
