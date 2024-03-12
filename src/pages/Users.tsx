@@ -6,7 +6,7 @@ export default function Users() {
   return (
     <>
       <div>
-        <div className="flex flex-col">
+        <div className="flex flex-col dark:text-white">
           <div className="text-[14px]">
             <span className="cursor-pointer hover:underline">
               <Link to="/">Pages</Link>
@@ -20,7 +20,7 @@ export default function Users() {
           <h1 className="text-3xl font-bold cursor-pointer">Users</h1>
         </div>
         {/** users table */}
-        <div className="bg-white h-auto rounded shadow my-4">
+        <div className="bg-white dark:bg-[#121212] dark:text-white rounded shadow my-4">
           <UsersTable />
         </div>
       </div>

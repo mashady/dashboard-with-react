@@ -1,5 +1,6 @@
 import * as React from "react"
-
+import { IoIosArrowDown } from "react-icons/io"
+import { IoIosArrowUp } from "react-icons/io"
 // complete the import here
 // replace here because we have an issue with types here
 import {
@@ -79,13 +80,13 @@ export default function UsersTable() {
               {headerGroup.headers.map(header => (
                 <th
                   key={header.id}
-                  className="px-4 pr-2 py-4 font-medium text-left"
+                  className="px-4 pr-2 py-4 font-medium text-left dark:bg-[#121212] dark:text-white"
                 >
                   {header.isPlaceholder ? null : (
                     <div
                       {...{
                         className: header.column.getCanSort()
-                          ? "cursor-pointer select-none flex min-w-[36px]"
+                          ? "cursor-pointer select-none flex min-w-[36px] items-center"
                           : "",
                         onClick: header.column.getToggleSortingHandler(),
                       }}
@@ -95,8 +96,16 @@ export default function UsersTable() {
                         header.getContext(),
                       )}
                       {{
-                        asc: <span className="pl-2">↑</span>,
-                        desc: <span className="pl-2">↓</span>,
+                        asc: (
+                          <span className="pl-2">
+                            <IoIosArrowUp />
+                          </span>
+                        ),
+                        desc: (
+                          <span className="pl-2">
+                            <IoIosArrowDown />
+                          </span>
+                        ),
                       }[header.column.getIsSorted() as string] ?? null}
                     </div>
                   )}

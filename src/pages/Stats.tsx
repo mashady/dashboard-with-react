@@ -44,7 +44,7 @@ export default function Stats() {
   return (
     <>
       <div>
-        <div className="flex flex-col">
+        <div className="flex flex-col dark:text-white">
           <div className="text-[14px]">
             <span className="cursor-pointer hover:underline">
               <Link to="/stats">Pages</Link>
@@ -61,7 +61,7 @@ export default function Stats() {
         <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-6">
           {links.map((link, index) => (
             <div
-              className="bg-white flex flex-row rounded-[20px] shadow-lg cursor-pointer"
+              className="bg-white dark:bg-[#121212] dark:text-white flex flex-row rounded-[20px] shadow-lg cursor-pointer"
               key={index}
             >
               <div className=" ml-4 flex justify-center items-center h-[90px]">

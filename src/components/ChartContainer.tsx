@@ -112,7 +112,7 @@ export default function ChartConatiner() {
   return (
     <div className=" mt-14">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 min-h-[300px]">
-        <div className="flex lg:col-span-2 justify-center items-center p-8 bg-white  w-full rounded-lg shadow-lg min-h-[300px]">
+        <div className="flex lg:col-span-2 justify-center items-center p-8 dark:bg-[#121212] dark:text-white bg-white  w-full rounded-lg shadow-lg min-h-[300px]">
           <ResponsiveContainer>
             <LineChart
               width={700}
@@ -127,12 +127,14 @@ export default function ChartConatiner() {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <div className=" bg-white  rounded-lg shadow-lg h-[300px] overflow-x-hidden overflow-scroll">
-          <h2 className="border-b-4 p-4 text-lg">recent transaction</h2>
+        <div className=" bg-white dark:bg-[#121212] dark:text-white   rounded-lg shadow-lg h-[300px] overflow-x-hidden overflow-scroll">
+          <h2 className="border-b-4  dark:border-[#1f1f1f] p-4 text-lg">
+            recent transaction
+          </h2>
           {transactionData.map((transaction, index) => (
             <div
               key={index}
-              className="flex justify-between items-center p-4 border-b-4"
+              className="flex justify-between items-center p-4 dark:border-[#1f1f1f] border-b-4"
             >
               <div>
                 <div className="text-[#077a8f] font-bold">

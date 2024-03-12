@@ -9,14 +9,14 @@ import { SiAuth0 } from "react-icons/si"
 
 export default function SmallNav() {
   return (
-    <div className="md:hidden p-8 flex bg-white justify-between items-center  mb-2">
+    <div className="md:hidden p-8 flex dark:bg-[#121212] dark:text-white bg-white justify-between items-center  mb-2">
       <Link to="/" className="text-3xl">
         Board<span className="text-3xl font-bold text-[#077a8f]">.</span>
       </Link>
       <div className="group  ">
         <CiMenuBurger className="text-2xl cursor-pointer " />
         {/** small windows menu */}
-        <div className="group-hover:block bg-white  w-[350px] hidden  absolute right-[24px]  top-[60px] pt-10">
+        <div className="group-hover:block dark:bg-[#121212] dark:text-white bg-white  w-[350px] hidden  absolute right-[24px]  top-[60px] pt-10">
           <div className="">
             <ul className="py-2">
               <NavLink className="" to="/">
