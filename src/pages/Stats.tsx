@@ -85,7 +85,7 @@ export default function Stats() {
         {/** chart start here */}
         <ChartConatiner />
         {/** add some posts and users table */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 mb-[500px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 ">
           <div className="bg-white dark:bg-[#121212] dark:text-white rounded-[20px] shadow-lg cursor-pointer h-[300px] p-4">
             <PiChart />
           </div>
