@@ -4,11 +4,11 @@ simple admin dashboard 💜
 
 ## Demo
 
-https://store-byabu.netlify.app/
+https://admin-dashboard-by-mashady.netlify.app/
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/mashady/dashboard-with-react/blob/main/promo/appHeader4dashboardproject.png)
 
 ## Tech Stack
 

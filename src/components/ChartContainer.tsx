@@ -138,7 +138,7 @@ export default function ChartConatiner() {
             >
               <div>
                 <div className="text-[#077a8f] font-bold">
-                  {transaction.number}
+                  {transaction.transNumber}
                 </div>
                 <div>{transaction.name}</div>
               </div>

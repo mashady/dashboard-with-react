@@ -173,7 +173,9 @@ export default function UsersTable() {
             <input
               type="text"
               className="main-bg outline-none border-0 rounded w-[2rem] h-[2rem] pl-[16%] mr-[0.5rem] placeholder:text-black"
-              placeholder={table.getState().pagination.pageIndex + 1}
+              placeholder={JSON.stringify(
+                table.getState().pagination.pageIndex + 1,
+              )}
               onChange={e => {
                 const page = e.target.value ? Number(e.target.value) - 1 : 0
                 table.setPageIndex(page)

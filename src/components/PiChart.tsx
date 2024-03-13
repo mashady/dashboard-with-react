@@ -8,7 +8,7 @@ const data = [
   { name: "Group D", value: 200 },
 ]
 
-const renderActiveShape = props => {
+const renderActiveShape = (props: any) => {
   const RADIAN = Math.PI / 180
   const {
     cx,
@@ -89,7 +89,7 @@ export default class PiChart extends PureComponent {
     activeIndex: 0,
   }
 
-  onPieEnter = (_, index) => {
+  onPieEnter = (_: any, index: any) => {
     this.setState({
       activeIndex: index,
     })
