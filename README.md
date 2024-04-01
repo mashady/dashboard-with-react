@@ -6,6 +6,10 @@ simple admin dashboard 💜
 
 https://admin-dashboard-by-mashady.netlify.app/
 
+## Demo Video Via YouTube
+
+https://youtu.be/_m1WV5TB6R4
+
 ## Screenshots
 
 ![App Screenshot](https://github.com/mashady/dashboard-with-react/blob/main/promo/appHeader4dashboardproject.png)
